@@ -1,0 +1,39 @@
+name: 评测
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.c'
+      - '*.py'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-22.04
+    env:
+      MY_URL: ${{ secrets.MY_URL }}
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v3
+        
+      - name: 安装依赖
+        run: |
+          if [ -z "${MY_URL}" ]; then
+            echo "未设置 MY_URL"
+            exit 0  # 退出
+          fi
+          git clone https://${MY_URL}:x-oauth-basic@github.com/NGC2237plus/c-cpp_test.git
+          sudo apt-get update
+          sudo apt-get install -y gcc-11 python3
+          cd c-cpp_test
+          pip3 install -r requirements.txt
+
+      - name: 测试
+        run: |
+          if [ -z "${MY_URL}" ]; then
+            echo "未设置 MY_URL"
+            exit 0  # 退出
+          fi
+          cd c-cpp_test
+          python3 test.py
