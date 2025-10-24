@@ -7,8 +7,8 @@ int main()
     int a, b; 
     scanf("%d %d", &a, &b);
     if(b!=0) {
-    printf("num=a=%d num=b=%d num=a/b=%d b!=0%d\n", a, b, a / b, b != 0);}
+    printf("num=a=%d num=b=%d num=a/b=%d b!=0%d\n", a, b, a / b);}
     else{
-        printf("num=a=%d num=b=%d 除数不能为0！ b!=0\n",a,b,b!=0);}
+        printf("num=a=%d num=b=%d 除数不能为0！ b!=0\n",a,b）;}
     return 0;
 }
