@@ -1,6 +1,6 @@
 //202510306202
 //202510306202@cdu.edu.cn
-龚慧洁
+//龚慧洁
 #include <stdio.h>
 int main()
 {
