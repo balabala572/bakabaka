@@ -4,27 +4,21 @@
 #include <stdio.h>
 int main()
 {
-    int score;
-    scanf("%d", &score);
-    if (score >= 90)
+    int i, h, t, u;
+    int is_first = 1;
+    for (i = 100; i <= 999; i++)
     {
-        printf("等级：A\n");
-    }
-    else if (score >= 80)
+        h = i / 100;
+        t = (i / 10) % 10;
+        u = i % 10;
+        if (h * h * h + t * t * t + u * u * u == i){
+                    }
+    if (is_first) {
+        is_first=0;
+    }else
     {
-        printf("等级：B\n");
-    }
-    else if (score >= 70)
-    {
-        printf("等级：C\n");
-    }
-    else if (score >= 60)
-    {
-        printf("等级：D\n");
-    }
-    else if (score < 60)
-    {
-        printf("等级：E\n");
+        printf(" %d", i);
     }
     return 0;
+}
 }
