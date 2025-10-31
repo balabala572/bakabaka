@@ -10,11 +10,11 @@ int main()
     scanf("%d", &n);
     if (n == 1)
     {
-        is_prime = 0;
+        is_prime = 1 ;
     }
     if (n == 2)
     {
-        is_prime = 1;
+        is_prime = 0;
     }
     else
     {
