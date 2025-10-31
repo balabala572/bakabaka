@@ -4,11 +4,42 @@
 #include <stdio.h>
 int main()
 {
-    int a, b; 
-    scanf("%d %d", &a, &b);
-    if(b!=0) {
-    printf("num=a=%d num=b=%d num=a/b=%d b!=0%d\n", a, b, a / b);}
-    else{
-        printf("num=a=%d num=b=%d 除数不能为0！ b!=0\n",a,b）;}
-    return 0;
+    int n, i;
+    int is_prime = 1;
+    while (1)
+    {
+        scanf("%d,&n");
+        if (n == 1)
+        {
+            is_prime = 0;
+            break;
+        }
+        if (n == 2)
+        {
+            is_prime = 1;
+            break;
+        }
+        else
+        {
+            i = 2;
+            while (i < n)
+            {
+                if (n % i == 0)
+                {
+                    is_prime = 0;
+                    break;
+                    i++;
+                }
+            }
+        }
+        if (is_prime == 1)
+        {
+            printf("密钥安全，密码设置成功\n");
+        }
+        else if (is_prime == 0)
+        {
+            printf("密钥不安全，请重新输入\n");
+        }
+        return 0;
+    }
 }
