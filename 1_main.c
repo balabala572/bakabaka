@@ -6,15 +6,15 @@
 int main()
 {
     int n, i;
-    int is_prime = 1;
+    int is_prime;
     scanf("%d", &n);
     if (n == 1)
     {
-        is_prime = 1 ;
+        is_prime = 0 ;
     }
     if (n == 2)
     {
-        is_prime = 0;
+        is_prime = 1;
     }
     else
     {
