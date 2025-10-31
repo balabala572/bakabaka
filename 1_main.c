@@ -27,11 +27,11 @@ int main()
                 break;
             }
         }
-        if (is_prime == 1)
+        if (is_prime == 0)
         {
             printf("密钥安全，密码设置成功\n");
         }
-        else if (is_prime == 0)
+        else if (is_prime == 1)
         {
             printf("密钥不安全，请重新输入\n");
         }
