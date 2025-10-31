@@ -8,6 +8,7 @@ int main()
     int n, i;
     int is_prime;
     scanf("%d", &n);
+    is_prime=1;
     if (n == 1)
     {
         is_prime = 0 ;
@@ -16,7 +17,7 @@ int main()
     {
         is_prime = 1;
     }
-    else
+    else if(n>2)
     {
 
         for (i = 2; i <= n; i++)
