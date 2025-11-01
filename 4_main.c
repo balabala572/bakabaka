@@ -13,7 +13,8 @@ int main()
         u = (i % 10);
         if (h * h * h + t * t * t + u * u * u == i)
         {
-            if(is_first==1){
+            if(is_first==1)
+            {
             printf("%d", i);
             is_first=0;
             }
