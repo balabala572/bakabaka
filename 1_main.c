@@ -5,33 +5,26 @@
 int main()
 {
     int n, i;
-    int is_prime;
+    int is_prime=1
+printf("请输入小于50的正整数作为密钥")
     scanf("%d", &n);
-    is_prime=1;
-    if (n == 1)
-    {
-        is_prime = 0 ;
+    if(n<=0 ||n>=50) {
+printf("输入不符合要求，请输入小于50的正整数\n")
+    return 0;
     }
-    if (n == 2)
-    {
-        is_prime = 1;
-    }
-    else if (n > 2)
-    {
-        for (i = 2; i * i<= n; i++)
+            for (i = 2; i < n; i++)
         {
             if (n % i == 0)
             {
                 is_prime = 0;
                 break;
             }
-          ｝  
-        }
-        if (is_prime == 0)
+        }         
+        if (is_prime == 1)
         {
             printf("密钥安全，密码设置成功\n");
         }
-        else if (is_prime == 1)
+        else if (is_prime == 0)
         {
             printf("密钥不安全，请重新输入\n");
         }
