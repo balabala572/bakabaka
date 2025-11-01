@@ -4,33 +4,28 @@
 #include <stdio.h>
 int main()
 {
-    int n, i;
+    int n, i=2;
     int is_prime = 1;
-    while (1)
-    {
-        scanf("%d,&n");
+     scanf("%d",&n);
         if (n == 1)
         {
             is_prime = 0;
-            break;
-        }
+             }
         if (n == 2)
         {
             is_prime = 1;
-            break;
-        }
+                }
         else
         {
-            i = 2;
             while (i < n)
             {
                 if (n % i == 0)
                 {
                     is_prime = 0;
                     break;
+                }
                     i++;
                 }
-            }
         }
         if (is_prime == 1)
         {
@@ -42,4 +37,3 @@ int main()
         }
         return 0;
     }
-}
