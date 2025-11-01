@@ -5,7 +5,7 @@
 int main()
 {
     int n, i;
-    int is_prime=1
+    int is_prime=1;
 printf("请输入小于50的正整数作为密钥");
     scanf("%d", &n);
     if(n<=0 ||n>=50) {
