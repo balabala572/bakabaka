@@ -17,15 +17,16 @@ int main()
     {
         is_prime = 1;
     }
-    else if(n>2)
+    else if (n > 2)
     {
 
-        for (i = 2; i <= n; i++)
+        for (i = 2; i * i= n; i++)
         {
             if (n % i == 0)
             {
                 is_prime = 0;
                 break;
+            }
             }
         }
         if (is_prime == 0)
@@ -38,4 +39,3 @@ int main()
         }
         return 0;
     }
-}
