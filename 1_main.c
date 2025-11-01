@@ -8,7 +8,7 @@ int main()
     int is_prime=1;
 printf("请输入小于50的正整数作为密钥");
     scanf("%d", &n);
-    if(n<=0 ||n>=50) {
+    if(n <=0 ||n >=50) {
 printf("输入不符合要求，请输入小于50的正整数\n");
     return 0;
     }
