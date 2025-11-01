@@ -4,9 +4,8 @@
 #include <stdio.h>
 int main()
 {
-    int i, h, t, u;
-    i = 100;
-    int is_first=1;
+    int i =100, h, t, u;
+        int is_first=1;
     while (i <= 999)
     {
         h = i / 100;
@@ -14,13 +13,15 @@ int main()
         u = (i % 10);
         if (h * h * h + t * t * t + u * u * u == i)
         {
-            if(is_first=0){
+            if(is_first==1){
             printf("%d", i);
-            is_first=0;}
-            else{
-                printf(" %d",i);}
+            is_first=0;
+            }
+            else {
+                printf(" %d",i);
+            }
+            ｝
             i++;
+            ｝
             return 0;
-        }
-    }
-}
+            }
