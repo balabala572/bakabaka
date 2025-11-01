@@ -14,11 +14,12 @@ int main()
         if (h * h * h + t * t * t + u * u * u == i){
                     }
     if (is_first) {
+        printf（"%d",i）
         is_first=0;
     }else
     {
         printf(" %d", i);
     }
+    }
     return 0;
-}
 }
