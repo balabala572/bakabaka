@@ -2,7 +2,6 @@
 //202510306202@cdu.edu.cn
 //龚慧洁
 #include <stdio.h>
-
 int main()
 {
     int n, i;
@@ -19,7 +18,6 @@ int main()
     }
     else if (n > 2)
     {
-
         for (i = 2; i * i= n; i++)
         {
             if (n % i == 0)
@@ -27,7 +25,7 @@ int main()
                 is_prime = 0;
                 break;
             }
-            }
+          ｝  
         }
         if (is_prime == 0)
         {
