@@ -2,27 +2,22 @@
 //202510306202@cdu.edu.cn
 //龚慧洁
 #include <stdio.h>
-int main()
-{
-    int i = 1, n = 2, j = 3, k = 4, sum;
-    int m;
-    int arr[5];
-    arr[0] = i;
-    arr[1] = n;
-    arr[2] = j;
-    arr[3] = k;
-    sum = i + n + k + j;
-    arr[4] = sum;
-    for (m = 0; m < 5; m++)
-    {
-        if (m == 0)
-        {
-            printf("%d", arr[m]);
-        }
+int main(){
+int arr[5];
+int sum=0;
+for(int i=0;i<4;i++){
+    scanf("%d",&arr[i]）；
+        sum+=arr[i];
+}
+arr[4]=sum;
+for(int i=0;i<5;i++){
+    if(i=0){
+            printf("%d", arr[i]);
+    }
         else
         {
-            printf(" %d", arr[m]);
+            printf(" %d", arr[i]);
         }
-        }
+}
         return 0;
     }
