@@ -4,29 +4,18 @@
 #include <stdio.h>
 int main()
 {
-    int n, i;
-    int is_prime=1;
-printf("请输入小于50的正整数作为密钥");
-    scanf("%d", &n);
-    if(n <=0 ||n >=50) {
-printf("输入不符合要求，请输入小于50的正整数\n");
-    return 0;
+    int arr[3][3];
+    int i, j;
+    for (i = 0; i < 3; i++)
+    {
+        scanf("%d,%d,%d", &arr[i][0], &arr[i][1], &arr[i][2]);
     }
-            for (i = 2; i < n; i++)
+        for (i = 0; i < 3; i++)
         {
-            if (n % i == 0)
+            for (j = 0; j < 3; j++)
             {
-                is_prime = 0;
-                break;
+                printf("%d\n", arr[i][j]);
             }
-        }         
-        if (is_prime == 1)
-        {
-            printf("密钥安全，密码设置成功\n");
-        }
-        else if (is_prime == 0)
-        {
-            printf("密钥不安全，请重新输入\n");
         }
         return 0;
     }
