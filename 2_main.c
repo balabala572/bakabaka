@@ -9,7 +9,7 @@ int main()
     int i, j;
     for (i = 0; i < 3; i++)
     {
-        scanf("%d %d %d", &arr[i][0], &arr[i][1], &arr[i][2]);
+        scanf("%d %d %d", &arr[i][0], &arr[i][1],&arr[i][2]);
     }
     for (i = 0; i < 3; i++)
     {
@@ -18,7 +18,7 @@ int main()
             trans[j][i]=arr[i][j];
         }
     }
-    for(i=0;i<3;i++);{
+    for(i = 0;i < 3; i++){
             printf("%d %d %d\n", trans[i][0],trans[i][1],trans[i][2]);
 }
         return 0;
