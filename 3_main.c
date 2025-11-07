@@ -4,36 +4,30 @@
 #include <stdio.h>
 int main()
 {
-    int n, i=2;
-    int is_prime = 1;
-     scanf("%d",&n);
-        if (n == 1)
-        {
-            is_prime = 0;
-             }
-        if (n == 2)
-        {
-            is_prime = 1;
-                }
-        else
-        {
-            while (i < n)
-            {
-                if (n % i == 0)
-                {
-                    is_prime = 0;
-                    break;
-                }
-                    i++;
-                }
-        }
-        if (is_prime == 1)
-        {
-            printf("密钥安全，密码设置成功\n");
-        }
-        else if (is_prime == 0)
-        {
-            printf("密钥不安全，请重新输入\n");
-        }
-        return 0;
+    int arr[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
+    int n = 10;
+    int temp;
+    int flag;
+    printf("请输入10个整数:\n");
+        for (int i = 0; i < n; i++)
+    {
+        scanf("%d\n", &arr[i]);
     }
+    for (int i = 0; i < n - 1; i++)
+    {
+        flag = 0;
+        for (int j = 0; j < n - i- 1; j++)
+        { if(arr[j]>arr[j+1]){
+            temp =arr[j];
+            arr[j]=arr[j+i];
+            arr[j+i]=temp;
+            flag = 1;
+        }
+        }
+        if (flag==0) break;
+    }
+    for (int i = 0;i < n; i++){
+        printf ("%d",arr[i]);
+    }
+    return 0;
+}
