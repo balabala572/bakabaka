@@ -4,23 +4,39 @@
 #include <stdio.h>
 int main()
 {
-    int i, h, t, u;
-    int is_first = 1;
-    for (i = 100; i <= 999; i++)
+    int arr[3][3];
+    int trans[3][3];
+    int i, j;
+    for (i = 0; i < 3; i++)
     {
-        h = i / 100;
-        t = (i / 10) % 10;
-        u = i % 10;
-        if (h * h * h + t * t * t + u * u * u == i){
-                        if (is_first) {
-        printf("%d",i);
-        is_first=0;
-    }else
+        scanf("%d %d %d", &arr[i][0], &arr[i][1], &arr[i][2]);
+    }
+    for (i = 0; i < 3; i++)
     {
-        printf(" %d",i);
+        for (j = 0; j < 3; j++)
+        {
+            trans[j][i]=arr[i][j];
+        }
     }
+    for(i=0;i<3;i++);{
+            printf("%d %d %d\n", trans[i][0],trans[i][1],trans[i][2]);
+}
+        return 0;
+}
+int main()
+{
+    int arr[3][3];
+    int i, j;
+    for (i = 0; i < 3; i++)
+    {
+        scanf("%d,%d,%d", &arr[i][0], &arr[i][1], &arr[i][2]);
     }
+        for (i = 0; i < 3; i++)
+        {
+            for (j = 0; j < 3; j++)
+            {
+                printf("%d\n", arr[i][j]);
+            }
+        }
+        return 0;
     }
-    return 0;
-}  
- 
