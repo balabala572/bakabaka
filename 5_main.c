@@ -26,7 +26,7 @@ int main() {
 result=calculatesum(a1,an,step);
 if (result == -1){
     printf("输入的不是有效等差数列\n");
-}
+} 
 else {
 printf("%d\n", result);
 }
