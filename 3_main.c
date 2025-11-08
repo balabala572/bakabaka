@@ -9,8 +9,9 @@ int main()
     int temp;
     int flag;
         int i, j;
-    for(i = 0;i < n ; i++){
+    for(i = 0;i < n ; i++) {
         scanf("%d",&arr[i]);
+    }
   for (int i = 0; i < n - 1 ; i++)
     {
         flag = 0;
@@ -29,6 +30,6 @@ int main()
     for (int i = 0;i < n; i++){
         printf (" %d",arr[i]);
     }
-        printf("\n")
+        printf("\n");
     return 0;
 }
