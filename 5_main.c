@@ -11,7 +11,7 @@ int calculatesum(int a1,int an,int step){
         return -1;
     }
 }      
-    if (((an-a1))*step < 0) ||((an-a1)% step!=0))
+    if (((an-a1)*step < 0)||((an-a1)% step!=0))
     {
         return -1;
 }
