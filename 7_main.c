@@ -2,25 +2,22 @@
 //202510306202@cdu.edu.cn
 //龚慧洁
 #include <stdio.h>
-int main()
-{
-    int arr[5];
-    int i;
-    for (i = 0; i < 4; i++)
-        scanf("%d", &arr[i]);
-    for (i = 3; i >= 0; i--)
-        arr[i + 1] = arr[i];
-    arr[0] = 0;
-    for (i = 0; i < 5; i++)
-    {
-        if (i == 0)
-        {
-            printf("%d", arr[i]);
+void one(int arr[],int length){
+    int i=0;
+    int j=length-1;
+    while (i<j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;;
+        j++;
+        j--;
         }
-        else
-        {
-            printf(" %d", arr[i]);
-        }
-    }
-    return 0;
 }
+int main(){
+    int arr[5];
+    printf("请输入5个整数\n");
+    for(int i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+    }
+}
+    
