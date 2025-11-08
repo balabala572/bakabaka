@@ -4,10 +4,14 @@
 #include <stdio.h>
 int main()
 {
-    int arr[10] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
+    int arr[10];
+    for(int i = 0;i < 10;i++){
+        scanf("%d",&arr[i]);
+        ｝
     int n = 10;
     int temp;
     int flag;
+        int i, j;
   for (int i = 0; i < n - 1; i++)
     {
         flag = 0;
@@ -22,8 +26,10 @@ int main()
         }
         if (flag==0) break;
     }
+        printf("%d",arr[0]);
     for (int i = 0;i < n; i++){
-        printf ("%d ",arr[i]);
+        printf (" %d",arr[i]);
     }
+        printf("\n")
     return 0;
 }
