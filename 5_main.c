@@ -2,22 +2,30 @@
 //202510306202@cdu.edu.cn
 //龚慧洁
 #include <stdio.h>
-int main(){
-int arr[5];
-int sum=0;
-for(int i=0;i<4;i++){
-    scanf("%d",&arr[i]);
-        sum +=arr[i];
-}
-arr[4]=sum;
-for(int i=0;i<5;i++){
-    if(i==0){
-            printf("%d", arr[i]);
+int calculatesum(int a1,int an,int step){
+    if (step == 0) {
+        if( a1 == an) {
+            return a1;
+        }
+        else{
+        return -1;
     }
-        else
-        {
-            printf(" %d", arr[i]);
-        } 
+}      
+int n=(an-a1) / step + 1;
+int sum = n* (a1+an) /2;
+return sum;
 }
-        return 0;
-}    
+int main() {
+    int a1,an,step;
+    int result;
+    scanf("%d %d %d",&a1,&an,&step);
+result=calculatesum(a1,an,step);
+if (result==-1){
+    printf("输入的不是有效等差数列\n");
+}
+else {
+printf("%d/n",result);
+}
+return 0;
+}
+
