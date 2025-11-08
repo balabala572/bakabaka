@@ -14,7 +14,11 @@ int main()
         {
             for (j = 0; j < 3; j++)
             {
-                printf("%d ", arr[i][j]);
+                if(j == 0){
+                printf("%d", arr[i][j]);
+            } else{
+            printf(" %d",arr[i][j]);
+        }
             }
             printf("\n");
         }
