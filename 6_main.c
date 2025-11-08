@@ -20,7 +20,7 @@ int main(){
     int arr[5];
     printf("请输入5个整数空格分离:");
     for(int i = 0;i < 5; i++){
-    scanf("%d",&arr[i];
+    scanf("%d",&arr[i]);
     }
 int sum_result=sum(arr, 5);
 int product_result=product(arr, 5);
