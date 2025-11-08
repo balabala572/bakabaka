@@ -8,19 +8,15 @@ int main()
     int n = 10;
     int temp;
     int flag;
-    printf("请输入10个整数:\n");
-        for (int i = 0; i < n; i++)
-    {
-        scanf("%d\n", &arr[i]);
-    }
-    for (int i = 0; i < n - 1; i++)
+  for (int i = 0; i < n - 1; i++)
     {
         flag = 0;
         for (int j = 0; j < n - i- 1; j++)
-        { if(arr[j]>arr[j+1]){
+        { 
+            if (arr[j] > arr[j+1]){
             temp =arr[j];
             arr[j]=arr[j+i];
-            arr[j+i]=temp;
+            arr[j+i] =temp;
             flag = 1;
         }
         }
