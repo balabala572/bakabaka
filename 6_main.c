@@ -5,14 +5,14 @@
 int sum(int arr[],int len){
     int sum=0;
     for (int i=0;i<len;i++){
-        sum=+arr[i];
+        sum=+ arr[i];
             }
             return sum;
             }
 int pruduct(int arr[],int len){
     int product=1;
     for(int i = 0;i<len;i++) {
-        product*=arr[i];
+        product *=arr[i];
     }
     return product;
 }
@@ -22,8 +22,8 @@ int main(){
     for(int i = 0;i<5;i++){
     scanf("%d",&arr[i]);
     }
-int sum=sum_result(arr, 5);
-int product=product_result(arr, 5);
+int sum_result=sum(arr, 5);
+int product_result=product(arr, 5);
 printf("%d\n",sum);
 printf("%d\n", product);
 return 0;
