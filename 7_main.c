@@ -9,7 +9,7 @@ void one(int arr[],int length){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
-        j++;
+        i++;
         j--;
         }
 }
