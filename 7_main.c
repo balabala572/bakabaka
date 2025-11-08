@@ -8,7 +8,7 @@ void one(int arr[],int length){
     while (i<j){
         int temp=arr[i];
         arr[i]=arr[j];
-        arr[j]=temp;;
+        arr[j]=temp;
         j++;
         j--;
         }
@@ -19,5 +19,8 @@ int main(){
     for(int i=0;i<5;i++){
         scanf("%d",&arr[i]);
     }
+one(arr,5);
+for(int i=0;i<5;i++){
+printf("%d ",arr[i]);
 }
-    
+}  
