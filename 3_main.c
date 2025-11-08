@@ -5,13 +5,12 @@
 int main()
 {
     int arr[10];
-    for(int i = 0;i < 10;i++){
-        scanf("%d",&arr[i]);
-        ｝
     int n = 10;
     int temp;
     int flag;
         int i, j;
+    for(i = 0;i < n - 1; i++){
+        scanf("%d",&arr[i]
   for (int i = 0; i < n - 1; i++)
     {
         flag = 0;
