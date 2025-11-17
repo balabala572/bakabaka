@@ -9,16 +9,17 @@ int main()
     printf("请输入5个整数:\n");
     for (int i = 0; i < 5; i++)
     {
-        scanf("%d", p + 1);
+        scanf("%d", p + i);
+    }
         for (int i = 0; i < 5; i++)
         {
             *(p + i) *= 2;
         }
         printf("元素乘以2以后的数组:\n");
-        for (int i = 0;i < 5;i++){
-            printf("%d",*( p + i));
+        for (int i = 0;i < 5; i++){
+            printf("%d ",*( p + i));
         }
         printf("\n");
         return 0;
     }
-}
+
