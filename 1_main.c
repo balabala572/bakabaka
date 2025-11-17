@@ -4,10 +4,10 @@
 #include <stdio.h>
 int main()
 {
-    int a ;
+    inta;
     scanf("d%",&a);
     int *p = &a;
     *p += 10;
-    printf("%d，%d\n", a，*p);
+    printf("%d,%d\n", a,*p);
         return 0;
 }
