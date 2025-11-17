@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main()
 {
-    inta;
+    int a;
     scanf("d%",&a);
     int *p = &a;
     *p += 10;
