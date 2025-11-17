@@ -4,22 +4,21 @@
 #include <stdio.h>
 int main()
 {
-    int arr[3][3];
-    int trans[3][3];
-    int i, j;
-    for (i = 0; i < 3; i++)
+    int arr[5];
+    int *p = arr;
+    printf("请输入5个整数:\n");
+    for (int i = 0; i < 5; i++)
     {
-        scanf("%d %d %d", &arr[i][0], &arr[i][1],&arr[i][2]);
-    }
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 3; j++)
+        scanf("%d", p + 1);
+        for (int i = 0; i < 5; i++)
         {
-            trans[j][i]=arr[i][j];
+            *(p + i) *= 2;
         }
-    }
-    for(i = 0;i < 3; i++){
-            printf("%d %d %d\n", trans[i][0],trans[i][1],trans[i][2]);
-}
+        printf("元素乘以2以后的数组:\n");
+        for (int i = 0;i < 5;i++){
+            printf("%d",*( p + i));
+        }
+        printf("\n");
         return 0;
+    }
 }
