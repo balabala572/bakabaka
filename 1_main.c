@@ -4,23 +4,11 @@
 #include <stdio.h>
 int main()
 {
-    int arr[3][3];
-    int i, j;
-    for (i = 0; i < 3; i++)
-    {
-        scanf("%d %d %d", &arr[i][0], &arr[i][1], &arr[i][2]);
-    }
-        for (i = 0; i < 3; i++)
-        {
-            for (j = 0; j < 3; j++)
-            {
-                if(j == 0){
-                printf("%d", arr[i][j]);
-            } else{
-            printf(" %d",arr[i][j]);
-        }
-            }
-            printf("\n");
-        }
-        return 0;
-    }
+    int a = 5;
+    int *p = &a;
+    *p += 10;
+    printf("%d\n", a);
+    printf("%d\n", *p);
+    return 0;
+}
+
