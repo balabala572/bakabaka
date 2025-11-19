@@ -2,34 +2,18 @@
 //202510306202@cdu.edu.cn
 //龚慧洁
 #include <stdio.h>
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 int main()
 {
-    int arr[10];
-    int n = 10;
-    int temp;
-    int flag;
-        int i, j;
-    for(i = 0;i < n ; i++) {
-        scanf("%d",&arr[i]);
-    }
-  for (int i = 0; i < n - 1 ; i++)
-    {
-        flag = 0;
-        for (int j = 0; j < n - i- 1; j++)
-        { 
-            if (arr[j] > arr[j + 1]){
-            temp =arr[j];
-            arr[j]=arr[j + 1];
-            arr[j + 1] =temp;
-            flag = 1;
-        }
-        }
-        if (flag==0) break;
-    }
-        printf("%d",arr[0]);
-    for (int i = 0;i < n; i++){
-        printf (" %d",arr[i]);
-    }
-        printf("\n");
-    return 0;
+    int x, y;
+    printf("请输入两个整数: ");
+    scanf("%d %d", &x, &y);
+    swap(&x, &y);
+    printf("交换后的结果：%d %d\n",x,y);
+        return 0;
 }
