@@ -2,24 +2,30 @@
 //202510306202@cdu.edu.en
 //龚慧洁
 #include <stdio.h>
-int two(int a, int b)
+void two(int *arr, int len)
 {
-    int result = 1;
-    for (int i = 0; i < b; i++)
+    int *p = arr;
+    for (int i = 0; i < 5; i++)
     {
-        result *= a;
+        (*(p + 1))++;
     }
-    return result;
 }
-
 int main()
 {
-    int sum = 0;
-    for (int i = 1; i <= 5; i++)
+    int arr[5];
+    int *p = arr;
+    int len = 5;
+    printf("请输入5个整数:"\n);
+    for (int i = 0; i < 5; i++)
     {
-        sum += two(i, 2);
+        scanf("%d", p + 1);
     }
-    printf("1*1+2*2+3*3+4*4+5*5=%d\n", sum);
+    two(arr, len);
+    printf("每个元素自增1后的数组:"\n);
+    for (int = 0; i < 5; i++)
+    {
+        printf("%d", *(p + 1);)
+    }
+    printf("\n");
     return 0;
 }
-
