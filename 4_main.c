@@ -14,18 +14,17 @@ void two(int *arr, int len)
 int main()
 {
     int arr[5];
-    int *p = arr;
-    int len = 5;
-        printf("请输入5个整数:\n");
+        int len = 5;
+        printf("请输入5个整数: \n");
     for (int i = 0; i < len; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", arr + 1);
     }
     two(arr, len);
     printf("每个元素自增1后的数组:\n");
     for (int i = 0; i < len; i++)
     {
-        printf("%d", arr[i]);
+        printf("%d", *(arr + i));
     }
     printf("\n");
     return 0;
