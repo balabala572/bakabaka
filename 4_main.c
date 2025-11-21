@@ -18,13 +18,13 @@ int main()
         printf("请输入5个整数: \n");
     for (int i = 0; i < len; i++)
     {
-        scanf("%d", arr + 1);
+        scanf("%d", arr + i);
     }
     two(arr, len);
-    printf("每个元素自增1后的数组:\n");
+    printf("每个元素自增1后的数组: \n");
     for (int i = 0; i < len; i++)
     {
-        printf("%d", *(arr + i));
+        printf("%d ", *(arr + i));
     }
     printf("\n");
     return 0;
